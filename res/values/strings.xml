@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RPI GPIO Controller</string>
+    <string name="menu_settings">Help</string>
+    <string name="menu_contact">Contact Me</string>
+    <string name="on_string">On</string>
+    <string name="off_string">Off</string>
+    <string name="save_details">Save Details</string>
+    <string name="ip_input_tp">Ex. 192.168.1.9</string>
+    <string name="port_hint">Ex. 2222</string>
+    <string name="author">Dev: Johan Berglind</string>
+    <string name="exit_details">Exit</string>
+
+</resources>

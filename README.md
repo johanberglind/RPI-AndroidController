@@ -11,6 +11,12 @@ License:
 
 See license.md
 
+
+APK LINK:
+---------
+
+https://github.com/johanberglind/RPI-AndroidController/raw/master/bin/RPIGPIOController.apk
+
 Installation/Configuration:
 ---------------------------
 

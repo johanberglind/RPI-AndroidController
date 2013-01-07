@@ -11,5 +11,8 @@
     <string name="port_hint">Ex. 2222</string>
     <string name="author">Dev: Johan Berglind</string>
     <string name="exit_details">Exit</string>
+    <string name="server_IP">Server IP</string>
+    <string name="server_PORT">Server PORT</string>
+    <string name="status_string">Status</string>
 
 </resources>

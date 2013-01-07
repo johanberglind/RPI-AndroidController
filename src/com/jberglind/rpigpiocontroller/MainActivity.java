@@ -33,7 +33,11 @@ public class MainActivity extends Activity {
 	}
 	
 	public void buttonCurrentStatus(View view) {
-		// Skicka en sträng till servern som sen triggar en event att köras, denna skall kontrollera om input är sann
+		Toast.makeText(this, "I don't work yet!", Toast.LENGTH_SHORT).show();
+	}
+	
+	public void exitApp(View view) {
+		finish();
 	}
 	
 	

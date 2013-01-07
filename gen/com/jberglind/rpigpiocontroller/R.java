@@ -14,17 +14,18 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int button1=0x7f070008;
-        public static final int ipText=0x7f070002;
-        public static final int menu_contact=0x7f07000a;
-        public static final int menu_settings=0x7f070009;
+        public static final int AppNameText=0x7f070000;
+        public static final int exitButton=0x7f070009;
+        public static final int ipText=0x7f070004;
+        public static final int menu_contact=0x7f07000b;
+        public static final int menu_settings=0x7f07000a;
         public static final int offButton=0x7f070006;
         public static final int onButton=0x7f070005;
-        public static final int portText=0x7f070001;
-        public static final int saveButton=0x7f070007;
-        public static final int textView1=0x7f070004;
-        public static final int textView2=0x7f070000;
-        public static final int textView3=0x7f070003;
+        public static final int portText=0x7f070003;
+        public static final int saveButton=0x7f070008;
+        public static final int serverIPText=0x7f070001;
+        public static final int serverPORTText=0x7f070002;
+        public static final int statusButton=0x7f070007;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -43,18 +44,12 @@ public final class R {
         public static final int on_string=0x7f040003;
         public static final int port_hint=0x7f040007;
         public static final int save_details=0x7f040005;
+        public static final int server_IP=0x7f04000a;
+        public static final int server_PORT=0x7f04000b;
+        public static final int status_string=0x7f04000c;
     }
     public static final class style {
         /** 
-        Base application theme, dependent on API level. This theme is replaced
-        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
-    
-
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        
-
         Base application theme for API 11+. This theme completely replaces
         AppBaseTheme from res/values/styles.xml on API 11+ devices.
     
@@ -67,9 +62,6 @@ public final class R {
  API 14 theme customizations can go here. 
          */
         public static final int AppBaseTheme=0x7f050000;
-        /**  Application theme. 
- All customizations that are NOT specific to a particular API-level can go here. 
-         */
         public static final int AppTheme=0x7f050001;
     }
 }

@@ -23,7 +23,7 @@ public class SocketBuddy {
 			s.close();
 		}
 		catch (Exception e) {
-			Log.d("SocketBuddy", "Problem med något... bra felmeddelande..");
+			Log.d("SocketBuddy", "Connection Error");
 		}
 		
 		

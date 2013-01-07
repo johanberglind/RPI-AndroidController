@@ -15,7 +15,12 @@ See license.md
 APK LINK:
 ---------
 
-https://github.com/johanberglind/RPI-AndroidController/raw/master/bin/RPIGPIOController.apk
+https://github.com/johanberglind/RPI-AndroidController/raw/master/bin/RPI-AndroidController.apk
+
+SERVER LINK:
+------------
+
+https://github.com/johanberglind/RPI-AndroidController/raw/master/python%20server/gpio.py
 
 Installation/Configuration:
 ---------------------------

@@ -1,5 +1,7 @@
 package com.jberglind.rpigpiocontroller;
 
+import java.util.concurrent.ExecutionException;
+
 import android.net.Uri;
 import android.os.Bundle;
 import android.app.Activity;
@@ -33,7 +35,40 @@ public class MainActivity extends Activity {
 	}
 	
 	public void buttonCurrentStatus(View view) {
-		Toast.makeText(this, "I don't work yet!", Toast.LENGTH_SHORT).show();
+		EditText ip_addr = (EditText) findViewById(R.id.ipText);
+		EditText port_nr = (EditText) findViewById(R.id.portText);
+
+		String ip = ip_addr.getText().toString();
+		String port_string = port_nr.getText().toString();
+
+		String[] com_info = { "status", ip, port_string };
+		
+		conhandler = new ConnectionHandler();
+		try {
+			String conresp = conhandler.execute(com_info).get();
+			if (conresp.equals("on")) {
+				Toast.makeText(this, "It's currently on!", Toast.LENGTH_SHORT).show();
+			}
+			else if (conresp.equals("off")) {
+				Toast.makeText(this, "It's currently off!", Toast.LENGTH_SHORT).show();
+			}
+			else {
+				Toast.makeText(this, "Connection error!", Toast.LENGTH_SHORT).show();
+			}
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (ExecutionException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+
+		
+		
+
+		
+		
 	}
 	
 	public void exitApp(View view) {
@@ -62,6 +97,8 @@ public class MainActivity extends Activity {
 		
 		ipTextField.setText(ip_text);
 		portTextField.setText(port_text);
+		
+		
 		
 	}
 	

@@ -1,4 +1,4 @@
-# Python backend for RPI GPIO Controller
+# Python backend for RPI GPIO Controller Application
 # Written by Johan Berglind
 
 import socket
@@ -18,7 +18,9 @@ print("Socket created")
 s.bind((HOST, PORT))
 print("Socket bound")
 s.listen(1)
-
+# Initial GPIO mode
+z = 0
+GPIO.output(LED, GPIO.LOW)
 
 while True:
     connection, ip = s.accept()
@@ -31,9 +33,16 @@ while True:
     if 'on' in data:
         print("LIGHTS ON!")
         GPIO.output(LED, GPIO.HIGH)
+        z = 1
     elif 'off' in data:
         print("LIGHTS OFF!")
         GPIO.output(LED, GPIO.LOW)
+        z = 0
+    elif 'status' in data:
+        if z == 0:
+            connection.send('off')
+        else:
+            connection.send('on')
     else:
         print('Wrong command! The command sent:{}'.format(data))
 

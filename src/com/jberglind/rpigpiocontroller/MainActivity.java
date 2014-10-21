@@ -158,7 +158,7 @@ public class MainActivity extends Activity {
 	}
 	
 	public void contactMe(MenuItem menuitem) {
-		Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("mailto:johan@berglind.me"));
+		Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("mailto:"));
 		startActivity(browserIntent);
 		
 	}
